@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - FlowZone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeInDown 0.6s ease;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #FFB954;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #FFB954 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+        }
+
+        .content {
+            display: grid;
+            gap: 30px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .support-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(255, 187, 84, 0.2);
+        }
+
+        .support-card h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #FFB954;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon {
+            font-size: 32px;
+        }
+
+        .support-card p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .support-card ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .support-card li {
+            margin-bottom: 12px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .contact-info {
+            background: rgba(255, 187, 84, 0.1);
+            border: 1px solid rgba(255, 187, 84, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-info strong {
+            color: #FFB954;
+            font-size: 18px;
+        }
+
+        a {
+            color: #FFB954;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #FFA500;
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .support-card {
+                padding: 30px 25px;
+            }
+
+            .support-card h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>Support Center</h1>
+            <p class="subtitle">We're here to help you get the most out of FlowZone</p>
+        </div>
+
+        <div class="content">
+            <div class="support-card">
+                <h2><span class="icon">📧</span> Contact Us</h2>
+                <p>Have a question or issue? We'd love to hear from you!</p>
+                <div class="contact-info">
+                    <strong>Email:</strong> support@flowzone.app<br>
+                    <strong>Response Time:</strong> Usually within 24 hours
+                </div>
+                <p style="margin-top: 20px;">When contacting support, please include:</p>
+                <ul>
+                    <li>Your device model and iOS version</li>
+                    <li>App version (found in Settings)</li>
+                    <li>Detailed description of the issue</li>
+                    <li>Screenshots if applicable</li>
+                </ul>
+            </div>
+
+            <div class="support-card">
+                <h2><span class="icon">❓</span> Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I sync my data across devices?</div>
+                    <div class="faq-answer">Simply sign in with the same account on all your devices. Your focus sessions will automatically sync.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What does Premium include?</div>
+                    <div class="faq-answer">Premium unlocks ad-free experience, unlimited custom categories, advanced statistics, and priority support.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I restore my Premium purchase?</div>
+                    <div class="faq-answer">Go to Settings → Premium → Restore Purchase. Make sure you're signed in with the same Apple ID used for the original purchase.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I export my data?</div>
+                    <div class="faq-answer">Yes! Go to Settings → Data Management → Export Data to download your focus session history as a CSV file.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How does the leaderboard work?</div>
+                    <div class="faq-answer">The leaderboard ranks users based on total focus time. You can view rankings for daily, weekly, monthly, or all-time periods.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I delete my account?</div>
+                    <div class="faq-answer">Contact us at support@flowzone.app and we'll process your account deletion request within 48 hours.</div>
+                </div>
+            </div>
+
+            <div class="support-card">
+                <h2><span class="icon">🐛</span> Report a Bug</h2>
+                <p>Found a bug? Help us improve FlowZone by reporting it!</p>
+                <p>Email us at <a href="mailto:support@flowzone.app">support@flowzone.app</a> with:</p>
+                <ul>
+                    <li>Steps to reproduce the issue</li>
+                    <li>What you expected to happen</li>
+                    <li>What actually happened</li>
+                    <li>Any error messages you saw</li>
+                </ul>
+            </div>
+
+            <div class="support-card">
+                <h2><span class="icon">💡</span> Feature Requests</h2>
+                <p>Have an idea to make FlowZone better? We'd love to hear it!</p>
+                <p>Send your suggestions to <a href="mailto:samarulraj@gmail.com">samarulraj@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
